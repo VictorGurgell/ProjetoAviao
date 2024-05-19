@@ -10,6 +10,100 @@ body {
     -o-background-size: cover;
     color: white;
     font-family: "Poetsen One", sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   font-weight: 400;
   font-style: normal;
+}
+
+h1 {
+    margin-top: 4%;
+    font-size: 70px;
+}
+
+h4 {
+    margin-top: -10%;
+    font-size: 30px;
+}
+
+.borda {
+    background-color: #222;
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+.pos {
+    display: grid;
+    place-items: center;
+    height: 9vh;
+    font-size: 36px;
+}
+
+.tam {
+    font-size: 24px;
+}
+
+.btn {
+    border:solid rgb(39, 39, 39);
+}
+
+
+button {
+    
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #222;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1.5;
+  max-width: none;
+  min-height: 44px;
+  min-width: 20px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 25px 9px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:focus {
+  opacity: .75;
+}
+
+.tam2 {
+    display: flex;
+    font-size: 24px;
+    margin-top: -20px;
+    margin-left: 127px;
+}
+
+.borda2 {
+    background-color: #222;
+    width: 400px;
+    height: 272px;
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+.btn2{
+    background-color: rgba(34, 34, 34, 0);
+    border-radius: 0px;
+}
+
+.fundo {
+    background-color: #222;
 }
