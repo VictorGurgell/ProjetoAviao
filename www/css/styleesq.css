@@ -179,7 +179,7 @@ background-image:url("fundoffjfh.png");
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: 20%;
+    height: 18%;
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -245,7 +245,7 @@ background-image:url("fundoffjfh.png");
   
   .input-container input[type="text"]:focus ~ .label,
   .input-container input[type="text"]:valid ~ .label {
-    top: -22px;
+    top: -25px;
     font-size: 24px;
     color: #ffffff;
   }
