@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-      <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,56 +11,71 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/styleesq.css">
-    <script type="text/javascript" src="JavaScript/js.js">
-        </script>
+    <script type="text/javascript" src="JavaScript/js.js"></script>
+    <script type="text/javascript" src="JavaScript/js2.js"></script>
 </head>
 <body style="background-image: linear-gradient(to bottom, #010b1a, #003b53, #006f71, #00a464, #36cfae);">
+    <br>
+    <button class="btn2" onclick="voltar2()"> <img style="width:30%;" src="css/kita.png"></button>
+
+    <center>
+        <img style="width:80%" src="css/logo.png">
+        <h1>Assentos da Direita</h1><br>
+        <h4>Selecione um a sua escolha</h4>
         <br>
- <button class="btn2" onclick="voltar2()"> <img style="width:30%;" src="css/kita.png"></button>
-
-     <center>
-           <img style="width:80%" src="css/logo.png">
-
-              <h1>Assentos da Direita</h1><br>
-                  <h4>Selecione um a sua escolha</h4>
-                  <br>
-                     <div class="cinema-container">
-        <div class="screen">Janela</div>
-        <div class="row">
-            <div class="seat">1A</div>
-            <div class="seat">1B</div>
-            <div class="seat">1C</div>
-            <div class="seat">1D</div>
-            <div class="seat">1E</div>
-                        <div class="seat">1F</div>
-                                    <div class="seat">1G</div>
-                                                <div class="seat">1H</div>
-                                                            <div class="seat">1I</div>
-                                                                        <div class="seat">1J</div>
+        <div class="cinema-container">
+            <div class="screen">Janela</div>
+            <div class="row">
+                <div class="seat" id="seat-1A">1A</div>
+                <div class="seat" id="seat-1B">1B</div>
+                <div class="seat" id="seat-1C">1C</div>
+                <div class="seat" id="seat-1D">1D</div>
+                <div class="seat" id="seat-1E">1E</div>
+                <div class="seat" id="seat-1F">1F</div>
+                <div class="seat" id="seat-1G">1G</div>
+                <div class="seat" id="seat-1H">1H</div>
+                <div class="seat" id="seat-1I">1I</div>
+                <div class="seat" id="seat-1J">1J</div>
+            </div>
+            <div class="row">
+                <div class="seat" id="seat-2A">2A</div>
+                <div class="seat" id="seat-2B">2B</div>
+                <div class="seat" id="seat-2C">2C</div>
+                <div class="seat" id="seat-2D">2D</div>
+                <div class="seat" id="seat-2E">2E</div>
+                <div class="seat" id="seat-2F">2F</div>
+                <div class="seat" id="seat-2G">2G</div>
+                <div class="seat" id="seat-2H">2H</div>
+                <div class="seat" id="seat-2I">2I</div>
+                <div class="seat" id="seat-2J">2J</div>
+            </div>
+            <div class="row">
+                <div class="seat" id="seat-3A">3A</div>
+                <div class="seat" id="seat-3B">3B</div>
+                <div class="seat" id="seat-3C">3C</div>
+                <div class="seat" id="seat-3D">3D</div>
+                <div class="seat" id="seat-3E">3E</div>
+                <div class="seat" id="seat-3F">3F</div>
+                <div class="seat" id="seat-3G">3G</div>
+                <div class="seat" id="seat-3H">3H</div>
+                <div class="seat" id="seat-3I">3I</div>
+                <div class="seat" id="seat-3J">3J</div>
+            </div>
         </div>
-        <div class="row">
-             <div class="seat">2A</div>
-            <div class="seat">2B</div>
-            <div class="seat">2C</div>
-            <div class="seat">2D</div>
-            <div class="seat">2E</div>
-                        <div class="seat">2F</div>
-                                    <div class="seat">2G</div>
-                                                <div class="seat">2H</div>
-                                                            <div class="seat">2I</div>
-                                                                        <div class="seat">2J</div>
-        </div>
-        <div class="row">
-              <div class="seat">3A</div>
-            <div class="seat">3B</div>
-            <div class="seat">3C</div>
-            <div class="seat">3D</div>
-            <div class="seat">3E</div>
-                        <div class="seat">3F</div>
-                                    <div class="seat">3G</div>
-                                                <div class="seat">3H</div>
-                                                            <div class="seat">3I</div>
-                                                                        <div class="seat">3J</div>
+    </center>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <div id="modal-body">
+                <p id="seat-info"></p>
+                <div class="input-container" id="client-form">
+                    <input type="text" id="client-name" required="">
+                    <label for="client-name" class="label" id="client-name">Seu nome:</label><br>
+                    <center><button id="save-client-btn" style="margin-top: 20%;">Comprar</button></center>
+                  </div>
+            </div>
         </div>
     </div>
 </body>

@@ -1,20 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <script src="cordova.js"></script>
-    <link rel="stylesheet" href="components/loader.css">
-    <script src="components/loader.js"></script>
-    <script>
-        //
-        // TODO: Write JavaScript code here
-        //
-    </script>
-</head><!DOCTYPE HTML>
-<html>
-<head>
       <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
@@ -25,8 +11,8 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/styleesq.css">
-    <script type="text/javascript" src="JavaScript/js.js">
-        </script>
+    <script type="text/javascript" src="JavaScript/js.js"></script>
+    <script type="text/javascript" src="JavaScript/js3.js"></script>
 </head>
 <body style="background-image: linear-gradient(to bottom, #010b1a, #003b53, #006f71, #00a464, #36cfae);">
         <br>
@@ -39,127 +25,122 @@
                   <h4>Visualize os assentos disponíveis e já ocupados!</h4>
                   <br>
                      <div class="cinema-container">
-        <div class="screen">Janela Direita</div>
-        <div class="row">
-            <div class="seat">1A</div>
-            <div class="seat">1B</div>
-            <div class="seat">1C</div>
-            <div class="seat">1D</div>
-            <div class="seat">1E</div>
-                        <div class="seat">1F</div>
-                                    <div class="seat">1G</div>
-                                                <div class="seat">1H</div>
-                                                            <div class="seat">1I</div>
-                                                                        <div class="seat">1J</div>
-        </div>
-        <div class="row">
-             <div class="seat">2A</div>
-            <div class="seat">2B</div>
-            <div class="seat">2C</div>
-            <div class="seat">2D</div>
-            <div class="seat">2E</div>
-                        <div class="seat">2F</div>
-                                    <div class="seat">2G</div>
-                                                <div class="seat">2H</div>
-                                                            <div class="seat">2I</div>
-                                                                        <div class="seat">2J</div>
-        </div>
-        <div class="row">
-              <div class="seat">3A</div>
-            <div class="seat">3B</div>
-            <div class="seat">3C</div>
-            <div class="seat">3D</div>
-            <div class="seat">3E</div>
-                        <div class="seat">3F</div>
-                                    <div class="seat">3G</div>
-                                                <div class="seat">3H</div>
-                                                            <div class="seat">3I</div>
-                                                                        <div class="seat">3J</div>
-        </div>
-        <br>
-              <div class="row">
-            <div class="seat">4A</div>
-            <div class="seat">4B</div>
-            <div class="seat">4C</div>
-            <div class="seat">4D</div>
-            <div class="seat">4E</div>
-                        <div class="seat">4F</div>
-                                    <div class="seat">4G</div>
-                                                <div class="seat">4H</div>
-                                                            <div class="seat">4I</div>
-                                                                        <div class="seat">4J</div>
-        </div>
-        <div class="row">
-             <div class="seat">5A</div>
-            <div class="seat">5B</div>
-            <div class="seat">5C</div>
-            <div class="seat">5D</div>
-            <div class="seat">5E</div>
-                        <div class="seat">5F</div>
-                                    <div class="seat">5G</div>
-                                                <div class="seat">5H</div>
-                                                            <div class="seat">5I</div>
-                                                                        <div class="seat">5J</div>
-        </div>
-        <div class="row">
-              <div class="seat">6A</div>
-            <div class="seat">6B</div>
-            <div class="seat">6C</div>
-            <div class="seat">6D</div>
-            <div class="seat">6E</div>
-                        <div class="seat">6F</div>
-                                    <div class="seat">6G</div>
-                                                <div class="seat">6H</div>
-                                                            <div class="seat">6I</div>
-                                                                        <div class="seat">6J</div>
-        </div>
+                      <div class="screen">Janela Direita</div>
+                      <div class="row">
+                          <div class="seat" id="seat-1A">1A</div>
+                          <div class="seat" id="seat-1B">1B</div>
+                          <div class="seat" id="seat-1C">1C</div>
+                          <div class="seat" id="seat-1D">1D</div>
+                          <div class="seat" id="seat-1E">1E</div>
+                          <div class="seat" id="seat-1F">1F</div>
+                          <div class="seat" id="seat-1G">1G</div>
+                          <div class="seat" id="seat-1H">1H</div>
+                          <div class="seat" id="seat-1I">1I</div>
+                          <div class="seat" id="seat-1J">1J</div>
+                      </div>
+                      <div class="row">
+                          <div class="seat" id="seat-2A">2A</div>
+                          <div class="seat" id="seat-2B">2B</div>
+                          <div class="seat" id="seat-2C">2C</div>
+                          <div class="seat" id="seat-2D">2D</div>
+                          <div class="seat" id="seat-2E">2E</div>
+                          <div class="seat" id="seat-2F">2F</div>
+                          <div class="seat" id="seat-2G">2G</div>
+                          <div class="seat" id="seat-2H">2H</div>
+                          <div class="seat" id="seat-2I">2I</div>
+                          <div class="seat" id="seat-2J">2J</div>
+                      </div>
+                      <div class="row">
+                          <div class="seat" id="seat-3A">3A</div>
+                          <div class="seat" id="seat-3B">3B</div>
+                          <div class="seat" id="seat-3C">3C</div>
+                          <div class="seat" id="seat-3D">3D</div>
+                          <div class="seat" id="seat-3E">3E</div>
+                          <div class="seat" id="seat-3F">3F</div>
+                          <div class="seat" id="seat-3G">3G</div>
+                          <div class="seat" id="seat-3H">3H</div>
+                          <div class="seat" id="seat-3I">3I</div>
+                          <div class="seat" id="seat-3J">3J</div>
+                      </div>
         <br>
         <div class="row">
-            <div class="seat">7A</div>
-            <div class="seat">7B</div>
-            <div class="seat">7C</div>
-            <div class="seat">7D</div>
-            <div class="seat">7E</div>
-                        <div class="seat">7F</div>
-                                    <div class="seat">7G</div>
-                                                <div class="seat">7H</div>
-                                                            <div class="seat">7I</div>
-                                                                        <div class="seat">7J</div>
-        </div>
+          <div class="seat" id="seat-4A">4A</div>
+          <div class="seat" id="seat-4B">4B</div>
+          <div class="seat" id="seat-4C">4C</div>
+          <div class="seat" id="seat-4D">4D</div>
+          <div class="seat" id="seat-4E">4E</div>
+          <div class="seat" id="seat-4F">4F</div>
+          <div class="seat" id="seat-4G">4G</div>
+          <div class="seat" id="seat-4H">4H</div>
+          <div class="seat" id="seat-4I">4I</div>
+          <div class="seat" id="seat-4J">4J</div>
+      </div>
+      <div class="row">
+          <div class="seat" id="seat-5A">5A</div>
+          <div class="seat" id="seat-5B">5B</div>
+          <div class="seat" id="seat-5C">5C</div>
+          <div class="seat" id="seat-5D">5D</div>
+          <div class="seat" id="seat-5E">5E</div>
+          <div class="seat" id="seat-5F">5F</div>
+          <div class="seat" id="seat-5G">5G</div>
+          <div class="seat" id="seat-5H">5H</div>
+          <div class="seat" id="seat-5I">5I</div>
+          <div class="seat" id="seat-5J">5J</div>
+      </div>
+      <div class="row">
+          <div class="seat" id="seat-6A">6A</div>
+          <div class="seat" id="seat-6B">6B</div>
+          <div class="seat" id="seat-6C">6C</div>
+          <div class="seat" id="seat-6D">6D</div>
+          <div class="seat" id="seat-6E">6E</div>
+          <div class="seat" id="seat-6F">6F</div>
+          <div class="seat" id="seat-6G">6G</div>
+          <div class="seat" id="seat-6H">6H</div>
+          <div class="seat" id="seat-6I">6I</div>
+          <div class="seat" id="seat-6J">6J</div>
+      </div>
+        <br>
         <div class="row">
-             <div class="seat">8A</div>
-            <div class="seat">8B</div>
-            <div class="seat">8C</div>
-            <div class="seat">8D</div>
-            <div class="seat">8E</div>
-                        <div class="seat">8F</div>
-                                    <div class="seat">8G</div>
-                                                <div class="seat">8H</div>
-                                                            <div class="seat">8I</div>
-                                                                        <div class="seat">8J</div>
-        </div>
-        <div class="row">
-              <div class="seat">9A</div>
-            <div class="seat">9B</div>
-            <div class="seat">9C</div>
-            <div class="seat">9D</div>
-            <div class="seat">9E</div>
-                        <div class="seat">9F</div>
-                                    <div class="seat">9G</div>
-                                                <div class="seat">9H</div>
-                                                            <div class="seat">9I</div>
-                                                                        <div class="seat">9J</div>
-        </div>
+                <div class="seat" id="seat-7A">7A</div>
+                <div class="seat" id="seat-7B">7B</div>
+                <div class="seat" id="seat-7C">7C</div>
+                <div class="seat" id="seat-7D">7D</div>
+                <div class="seat" id="seat-7E">7E</div>
+                <div class="seat" id="seat-7F">7F</div>
+                <div class="seat" id="seat-7G">7G</div>
+                <div class="seat" id="seat-7H">7H</div>
+                <div class="seat" id="seat-7I">7I</div>
+                <div class="seat" id="seat-7J">7J</div>
+            </div>
+            <div class="row">
+                <div class="seat" id="seat-8A">8A</div>
+                <div class="seat" id="seat-8B">8B</div>
+                <div class="seat" id="seat-8C">8C</div>
+                <div class="seat" id="seat-8D">8D</div>
+                <div class="seat" id="seat-8E">8E</div>
+                <div class="seat" id="seat-8F">8F</div>
+                <div class="seat" id="seat-8G">8G</div>
+                <div class="seat" id="seat-8H">8H</div>
+                <div class="seat" id="seat-8I">8I</div>
+                <div class="seat" id="seat-8J">8J</div>
+            </div>
+            <div class="row">
+                <div class="seat" id="seat-9A">9A</div>
+                <div class="seat" id="seat-9B">9B</div>
+                <div class="seat" id="seat-9C">9C</div>
+                <div class="seat" id="seat-9D">9D</div>
+                <div class="seat" id="seat-9E">9E</div>
+                <div class="seat" id="seat-9F">9F</div>
+                <div class="seat" id="seat-9G">9G</div>
+                <div class="seat" id="seat-9H">9H</div>
+                <div class="seat" id="seat-9I">9I</div>
+                <div class="seat" id="seat-9J">9J</div>
+            </div>
           <div class="screen">Janela Esquerda</div>
     </div>
 
     <br><br>
-    <button class="button-35" role="button">Gerar Relatório</button>
+    <button class="button-35" role="button" id="generateReportBtn">Gerar Relatório</button>
     <br><br>
-</body>
-</html>
-
-<body>
-    <!-- TODO: Please edit here -->
 </body>
 </html>
